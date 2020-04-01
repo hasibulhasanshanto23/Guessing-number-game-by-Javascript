@@ -46,7 +46,7 @@ function guessing() {
 
   }
 
-   else if (guess.value >= 10 || 0>=guess.value) {
+   else if (guess.value > 11 || 0>=guess.value) {
     document.getElementById("invalidmsg").innerHTML = "Number must be less than 10 and positive";
 
     document.getElementById("loading").style.display = "none";
