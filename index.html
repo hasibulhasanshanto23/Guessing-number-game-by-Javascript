@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Game</title>
+
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center mt-5 " id="game">
+                    <h1 class="heading pb-3">Guessing Game</h1>
+                    <p class="alert alert-info">
+                        Guess a Number Between <span class="min-num badge badge-info"> 1</span> and <span
+                            class="badge badge-info">10</span>
+                    </p>
+                    <form action="" id="gameform">
+                        <div class="form-group">
+                            <div class="input-gorup mb-3">
+                                <input type="text" class="form-control" id="username" placeholder="Enter Your Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-gorup mb-3">
+                                <input type="number" class="form-control" id="guessnumber" placeholder="Enter a guess" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success btn-block" value="Submit">
+                        </div>
+
+                    </form>
+
+                    <!--loading-->
+                    <div id="loading">
+                        <img src="load1.gif" alt="loading" class="img-fluid">
+                    </div>
+                    <!--msg-->
+                    <div id="message" class=" mt-1 mb-1">
+                        <p class="lead text-center text-success " id="congo"></p>
+
+                        <h2><span id="name" class="text-center badge badge-dark "></span></h2>
+
+                        <p class="lead text-center text-primary my-4" id="thenum"> The Number Was<span class="badge badge-info mx-2" id="answer"></span></p>
+                                
+
+                        <p class="lead text-center text-danger" id="invalidmsg"></p>
+
+                        <p class="lead text-center text-danger" id="sorry"></p>
+
+                        <h2><span id="sorryname" class="text-center badge badge-dark "></span></h2>
+
+
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary mx-auto my-4" data-toggle="modal"
+                            data-target="#exampleModalCenter" id="but">
+                            See Answer
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Answer</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="lead text-success">The Number Was<span class="badge badge-success mx-2" id="modal"></span></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
